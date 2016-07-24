@@ -30,6 +30,7 @@ type Spec struct {
 // OrchestrationConfig represents orchestration configuration.
 type OrchestrationConfig struct {
 	TaskHistoryRetentionLimit int64 `json:",omitempty"`
+	EncryptRoutingMesh        bool  `json:",omitempty"`
 }
 
 // TaskDefaults parameterizes cluster-level task creation with default values.
